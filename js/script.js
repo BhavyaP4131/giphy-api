@@ -20,7 +20,7 @@ const searchInput = document.querySelector("#search-input");
 // ============================================================
 // Fetches GIFs from the Giphy API based on the search input.
 // Falls back to "funny" if the search box is left empty.
-/# ============================================================
+// ============================================================
 async function fetchGifs() {
   const query = searchInput.value.trim() || "funny";
   const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}&limit=12`;
